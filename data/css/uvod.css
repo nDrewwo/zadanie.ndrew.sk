@@ -27,6 +27,14 @@ p{
     max-width: 1000px;
 }
 
+footer{
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+}
+
 /* For WebKit-based browsers */
 ::-webkit-scrollbar {
     width: 6px; /* Width of the entire scrollbar */
