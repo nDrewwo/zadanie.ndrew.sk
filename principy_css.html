@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princípy</title>
+    <link rel="stylesheet" href="data/css/principy.css">
+    <link rel="icon" href="data/assets/icon.png">
+</head>
+<body>
+    <h1 align="center">CSS Štýly</h1>
+    <div id="nav">
+        <a href="https://zadanie.ndrew.sk" class="href"><h2>Domov</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/uvod_css" class="href"><h2>Úvod do CSS</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/principy_css" class="href"><h2>Princípy CSS štýlov</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/selektory_css" class="href"><h2>Selektory</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/definovanie_css" class="href"><h2>Definovanie</h2></a> <!-- This is a comment -->
+    </div>
+    <div id="content">
+        <h2>Princípy CSS štýlov</h2>
+        <p>CSS je <strong>deklaratívny jazyk</strong>, s jednouchou a ľahko čitateľnou syntaxou. CSS súboru hovoríme <strong>šablóna</strong> alebo tiež štýl (style sheet). Podobne ako (X)HTML dokumenty, aj CSS šablóny sú vlastne textové súbory. Šablóna pozostáva z <strong>pravidiel</strong>. Pravidlo sa skladá z dvoch častí. </p>
+        <ul>
+            <li>Prvá je podmienka, ktorej hovoríme selektor, a ktorá určuje, na ktoré elementy v dokumente bude pravidlo aplikované.  </li>
+            <li>Druhá časť je séria <strong>deklarácií</strong>, uzavretá v zložených zátvorkách, z ktorých každá mení nejakú vlastnosť cieľového elementu. </li>
+        </ul>
+        <p>Príklad CSS pravidla:</p>
+        <strong><p>p strong {color: navy; font-weight: bold; background: transparent} </p></strong>
+        <p>p <strong>strong</strong>  je selektor pravidla. Hovorí, že pravidlo bude aplikované na každý element strong, ktorý je v dokumente nasledovníkom nejakého elementu p, t.j. nachádza sa vo vnútri nejakého odstavca. </p>
+        <p>Na každý takýto element budú aplikované tri deklarácie: </p>
+        <ol>
+            <li><strong>color</strong>:  <strong>navy</strong>; – jeho farba sa zmení na tmavomodrú, (color je vlastnosť a navy jej hodnota (farba: modrá), vlastnosť a hodnota sú oddelené dvojbodkou a medzerou) </li>
+            <li><strong>font-weight: bold;</strong> - font bude tučný, </li>
+            <li><strong>background: transparent;</strong> – pozadie bude priesvitné. </li>
+
+        </ol>
+        <p>{} zložené zátvorky vymedzujú deklaráciu formátu tohto selektoru. Dve deklarácie sa oddeľujú bodkočiarkou (je možné písať bodkočiarku i na koniec poslednej deklarácie, ale nie je tam povinná)  </p>
+    </div>
+</body>
+</html>

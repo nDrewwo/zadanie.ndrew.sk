@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektrory</title>
+</head>
+<body>
+    <h1 align="center">CSS Štýly</h1>
+    <table border="1" style="margin: 0 auto;">
+        <tr>
+            <td><a href="index.html">Domov</a></td>
+            <td><a href="uvod_css.html">Úvod do CSS</a></td>
+            <td><a href="principy_css.html">Princípy CSS štýlov</a></td>
+            <td><a href="selektory_css.html">Selektory</a></td>
+        </tr>
+    </table>
+
+    <h2>Selectory</h2>
+    <p>Základné druhy:  </p>
+    <ul>
+        <li><strong>selektor typu:</strong> vyberá element podľa mena elementu. Občas sa hodí aj univerzálny selektor, znak „*“, ktorý vyberá každý element;  </li>
+        <li><strong>ID selektor:</strong> vyberie element, ktorý má hodnotu atribútu id nastavenú na nejakú konkrétnu hodnotu. Takýto element môže byť v celom dokumente iba jeden. Selektor má tvar # &lt;Trieda&gt; ;  </li>
+        <li><strong>selektor triedy:</strong> vyberá podľa hodnoty atribútu class, hodnotou ktorého môže byť medzerami oddelený zoznam tried. Má tvar &lt;trieda&gt; . Je to jeden z najpoužívanejších a najpraktickejších selektorov;  </li>
+        <li><strong>selektor pseudo-triedy:</strong> vyberá element, ktorý je v určitom stave, v závislosti od akcie, ktorú vykonal používateľ. Tento selektor začína znakom „:“. Najdôležitejšie pseudotriedy sú :link (nenavštívený odkaz), :visited (navštívený odkaz), :hover (element, nad ktorým je práve kurzor), a :active (element, nad ktorý používateľ drží stlačené tlačidlo myši).  </li>
+    </ul>
+    <p>V súvislosti so selektormi podľa ID a podľa triedy sa často hodia dva (X)HTML elementy: </p>
+    <ul>
+        <li><strong>&lt;div&gt;</strong> - je blokovým elementom  </li>
+        <li><strong>&lt;span&gt;</strong> – je riadkovým elementom </li>
+    </ul>
+    <p><strong>Div</strong> sa najčastejšie  prekladá ako oddiel. Zahŕňa v sebe ľubovoľne veľkú oblasť textu vrátane nadpisov, obrázkov a tabuliek. Nezriedka sa celá stránka vyskytuje vo vnútri jedného elementu &lt;div&gt;. Pred a za oddielom sa zalomí riadok. V tomto zmysle je &lt;div&gt; veľmi podobný odstavcu  &lt;p&gt;.  Na rozdiel od odstavca ale &lt;div&gt; nerobí pred a za sebou vizuálne medzery.  </p>
+    <p><strong>Span</strong> slúži pre logické vymedzenie časti textu, ktorá bude inakšie   formátovaná alebo na ňu bude viazaný skript. Je príbuzný s tagom div s tým rozdielom, že &lt;div&gt; je vnútri riadku, tzn. nezalamuje pred a po sebe riadok. </p>
+    <p>Pomocou priradeného ID, ale predovšetkým pomocou tried možno z týchto elementov „vyrobiť“ nový element so špeciálnym formátovaním, aký v (X)HTML nie je.  </p>
+    <p>Selektory je možné kombinovať a vytvárať tak zložené selektory. </p>
+</body>
+</html>

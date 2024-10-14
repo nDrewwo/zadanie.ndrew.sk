@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definovanie</title>
+    <link rel="stylesheet" href="data/css/siekel.css">
+    <link rel="icon" href="data/assets/icon.png">
+</head>
+<body>
+    <header>
+        <h1>CSS štýly - učebný materiál pre predmet TIU, tretí ročník IST</h1>
+    </header>
+    <div id="nav">
+        <a href="https://zadanie.ndrew.sk" class="href"><h2>Domov</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/uvod_css" class="href"><h2>Úvod do CSS</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/principy_css" class="href"><h2>Princípy CSS štýlov</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/selektory_css" class="href"><h2>Selektory</h2></a> <!-- This is a comment -->
+        <a href="https://zadanie.ndrew.sk/definovanie_css" class="href"><h2>Definovanie</h2></a> <!-- This is a comment -->
+    </div>
+    <div id="content">
+        <h3>Sú tri možnosti:</h3>
+        <p>1. <span class="dolezite">Priamy zápis štýlu (tzv. inline štýl)</span> - štýl definujeme priamo v súvislosti s konkrétnym tagom pomocou atribútu style. Používa sa najmenej, vtedy, keď štýl používame na stránke len výnimočne, alebo keď chceme „prebiť“ vlastnosti nadefinovaných štýlov. Napr. potrebujeme vytvoriť červený nadpis tučným písmom: </p>
+        <div class="codesnippet">
+            <code>&lt;h1 style="color: red"&gt;Hlavný nadpis bude červenou&lt;/h1&gt;</code>
+        </div>
+        <p>alebo chceme mať celý odstavec červenou: </p>
+        <div class="codesnippet">
+            <code>&lt;p style="color: red"&gt;Tento odstavec bude napísaný červenou&lt;/p&gt;</code>
+        </div>
+        <p>2. <span class="dolezite">Definícia štýlu v hlavičke</span> -  ak máme súhrn vlastností, ktoré budeme používať len  na jednej stránke, je dobré si ich nastaviť do hlavičky tejto stránky. Takto nastavené štýly sa potom budú aplikovať u všetkých tagov a nemusíme ich dookola vypisovať. Príklad s červeným nadpisom by vyzeral nasledovne:  </p>
+        <div class="codesnippet">
+            <code>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                    h1 {color: red}<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                    &lt;h1&gt;Každý nadpis úrovne h1 bude na tejto stránke červený&lt;/h1&gt;<br>
+                &lt;/body&gt;
+            </code>    
+        </div>
+        <p>Kedykoľvek použijeme tag h1, zobrazí sa nadpis červenou. Došlo teda k akémusi predefinovaniu, prenastaveniu vlastnosti štandardného tagu h1 na tag s požadovanými vlastnosťami.</p>
+        <p>3. <span class="dolezite">Externý súbor CSS</span> - používa sa u zložitejších projektov a štruktúr stránok, ktoré vo väčšej miere využívajú CSS štýly. Štýly sa definujú na jednom mieste, nie však pre jednu stránku ako v predchádzajúcom prípade, ale pre celý projekt v samostatnom externom súbore. Ak potom vymeníme v súbore nejaký parameter zmeníme vlastne vzhľad všetkých stránok odkazujúcich sa na externý súbor štýlov v jednom okamihu. Súbor by mal mať príponu .css. Nemusí obsahovať žiadne zvláštne úvodné znaky ani inú štruktúru. Hneď môžeme definovať štýly. Podobne ako stránku ho treba vytvárať v jednoduchom textovom editore. Príklad css súboru s názvom napr. moje_styly.css</p>
+        <div class="codesnippet">
+            <code>
+                /*css subor*/<br>
+                h1 {<br>
+                    color: red;<br>
+                    background: lightblue;<br>
+                }
+            </code>
+        </div>
+        <p>Štruktúra HTML dokumentu potom bude: </p>
+        <div class="codesnippet">
+            <code>
+                &lt;!DOCTYPE HTML&gt;<br>
+                &lt;html&gt;<br>
+                  &lt;head&gt;<br>
+                    &lt;title&gt;Stránka so štýlmi&lt;/title&gt;<br>
+                    &lt;link rel="stylesheet" type="text/css" href="moje_styly.css"&gt;<br>
+                  &lt;/head&gt;<br>
+                  &lt;body&gt;<br>
+                    ... <br>
+                    &lt;h1&gt;Nadpis h1 bude červenou na bledomodrom pozadí na každej stránke s prilinkovanou šablonou moje_styly.css&lt;/h1&gt;<br>
+                    ... <br>
+                    ... <br>
+                  &lt;/body&gt;<br>
+                &lt;/html&gt;
+                </code>                
+        </div>
+        <p>V hlavičke dokumentu musí byť odkaz na tento súbor. Link je nepárový tag  a určuje: spojitosť s externým súborom. Význam atribútov je nasledovný: </p>
+        <ul>
+            <li><i>rel</i> určuje vzťah k linkovanému súboru,</li>
+            <li><i>type</i> – typ súboru,</li>
+            <li><i>href</i> cestu.</li>
+        </ul>
+    </div>
+    <hr> <!-- HR who-->
+    <footer>
+        <p>Autor: Andrej Siekel</p>
+        <p>Posledná aktualizácia: 7.10.2024</p>
+    </footer>
+</body>
+</html>
